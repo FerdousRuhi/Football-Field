@@ -7,11 +7,11 @@
 #include<stdlib.h>
 #include<math.h>
 
-/*void init()
+void init()
 {
     glClearColor(0,1,0,0);//RGBA where a means alpha that declares the opacity of color
     glOrtho(-20,+20,-10,+10,-1,+1);//left+right=x axis, bottom+top=y axis, zNear+zFar=z axis
-}*/
+}
 
 float bx=0, ball_angle=0.0;
 
@@ -143,7 +143,7 @@ void ball(float r)
     glEnd();
 }
 
-/*void myDisplay()
+void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);//this function enables color
     glPushMatrix();
@@ -170,7 +170,7 @@ void ball(float r)
         glPopMatrix();
     glPopMatrix();
     glFlush();
-}*/
+}
 
 void move_right()
 {
@@ -195,7 +195,7 @@ void specialKey(int key, int x, int y)
     }
 }
 
-/*int main()
+int main()
 {
     //glutInit(&argc, &argv);
     glutInitWindowSize(1100, 700);//display size in height and width in pixel
@@ -210,4 +210,4 @@ void specialKey(int key, int x, int y)
     glutMainLoop();//use to loop the display
     //if we don't use loop in the display, then the display will occur only once
     return 0;
-}*/
+}
